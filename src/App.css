@@ -28,7 +28,6 @@ html, body, #root {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(160deg, #fff9e6 0%, #ffe8f0 40%, #e8f4ff 100%);
-  overflow: hidden;
   padding: 40px 48px 80px;
 }
 
@@ -201,7 +200,7 @@ html, body, #root {
 
   .pillar-hero {
     height: auto;
-    min-height: 66vh;
+    min-height: unset;
     padding: 40px 32px 40px;
     flex-direction: column;
     justify-content: flex-start;
@@ -238,8 +237,8 @@ html, body, #root {
 @media (max-width: 480px) {
   .pillar-hero {
     height: auto;
-    min-height: 70vh;
-    padding: 32px 24px 0;
+    min-height: unset;
+    padding: 32px 24px 40px;
   }
   .pillar-contact {
     padding: 40px 24px;
