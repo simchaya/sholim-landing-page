@@ -9,7 +9,6 @@
 html, body, #root {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .App {
@@ -18,7 +17,6 @@ html, body, #root {
   flex-direction: row-reverse;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* HERO — right, 2/3 */
@@ -171,4 +169,95 @@ html, body, #root {
 .contact-logo {
   margin-top: 80px;
   width: 300px;
+}
+ /* SMALL DESKTOP / WINDOWED */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+  .about-text {
+    font-size: 0.8rem;
+  }
+  .hero-balloon {
+    width: 150px;
+  }
+  .contact-logo {
+    width: 200px;
+  }
+  .pillar-contact {
+    padding: 60px 24px;
+  }
+  .pillar-contact h2 {
+    margin-bottom: 40px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+    height: auto;
+    overflow-y: auto;
+  }
+  .pillar-hero {
+    height: 70vh;
+    min-height: 500px;
+    padding: 40px 32px 0;
+  }
+  .pillar-contact {
+    height: auto;
+    min-height: unset;
+    padding: 48px 32px;
+  }
+  .pillar-contact h2 {
+    margin-bottom: 32px;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .hero-balloon {
+    width: 130px;
+  }
+  .contact-logo {
+    margin-top: 32px;
+    width: 160px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .pillar-hero {
+    height: auto;
+    min-height: 70vh;
+    padding: 32px 24px 0;
+  }
+  .pillar-contact {
+    padding: 40px 24px;
+  }
+  .pillar-contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  .hero-tagline {
+    font-size: 0.88rem;
+  }
+  .about-text {
+    font-size: 0.8rem;
+  }
+  .hero-balloon {
+    width: 110px;
+  }
+  .contact-logo {
+    margin-top: 24px;
+    width: 120px;
+  }
+  .contact-card span {
+    font-size: 11px;
+  }
+  .contact-card p {
+    font-size: 0.88rem;
+  }
 }
