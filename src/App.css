@@ -192,35 +192,44 @@ html, body, #root {
   }
 }
 
-/* TABLET */
 @media (max-width: 768px) {
   .App {
     flex-direction: column;
     height: auto;
     overflow-y: auto;
   }
+
   .pillar-hero {
-    height: 70vh;
-    min-height: 500px;
-    padding: 40px 32px 0;
-  }
-  .pillar-contact {
     height: auto;
-    min-height: unset;
-    padding: 48px 32px;
+    padding: 40px 32px 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
   }
-  .pillar-contact h2 {
-    margin-bottom: 32px;
-  }
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
+
   .hero-balloon {
-    width: 130px;
+    order: -1;
+    width: 120px;
+    margin-bottom: 8px;
   }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .pillar-contact {
+    padding: 48px 32px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .pillar-contact h2 {
+    margin-bottom: 0;
+  }
+
   .contact-logo {
-    margin-top: 32px;
     width: 160px;
+    margin-top: 0;
   }
 }
 
@@ -261,3 +270,4 @@ html, body, #root {
     font-size: 0.88rem;
   }
 }
+
