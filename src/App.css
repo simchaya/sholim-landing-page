@@ -210,8 +210,13 @@ html, body, #root {
   .pillar-contact {
     min-height: 34vh;
     padding: 48px 32px;
-    justify-content: center;
-    gap: 24px;
+    justify-content: bottom;
+    gap: 0px;
+  }
+
+  .pillar-contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
   }
 
   .hero-balloon {
@@ -228,6 +233,11 @@ html, body, #root {
     width: 160px;
     margin-top: 0;
   }
+
+  .contact-card {
+    padding: 5px 0px;
+  }
+  
 }
 /* MOBILE */
 @media (max-width: 480px) {
