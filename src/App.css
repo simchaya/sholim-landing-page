@@ -224,10 +224,6 @@ html, body, #root {
     order: 1;
   }
 
-  .pillar-contact h2 {
-    margin-bottom: 0;
-  }
-
   .contact-logo {
     width: 160px;
     margin-top: 0;
@@ -245,7 +241,7 @@ html, body, #root {
   }
   .pillar-contact h2 {
     font-size: 1.2rem;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .hero-text h1 {
     font-size: 1.4rem;
