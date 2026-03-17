@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.App {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* HERO — right, 2/3 */
+.pillar-hero {
+  flex: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(160deg, #fff9e6 0%, #ffe8f0 40%, #e8f4ff 100%);
+  overflow: hidden;
+  padding: 40px 48px 80px;
+}
+
+.hero-clouds {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    radial-gradient(ellipse 160px 80px at 15% 25%, rgba(255,255,255,0.85) 0%, transparent 70%),
+    radial-gradient(ellipse 100px 50px at 80% 10%, rgba(255,255,255,0.8) 0%, transparent 70%);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  direction: rtl;
+  max-width: 480px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  color: #e07b9a;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2a2060;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #6a5fa0;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #e07b9a;
+  margin: 0 auto 40px;
+  opacity: 0.5;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #555;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.hero-balloon {
+  position: relative;
+  z-index: 2;
+  width: 180px;
+  flex-shrink: 0;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+.hero-balloon img {
+  width: 100%;
+  display: block;
+}
+
+/* CONTACT — left, 1/3 */
+.pillar-contact {
+  flex: 1;
+  background: linear-gradient(160deg, #2a2060 0%, #4a3a9a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding: 110px 32px;
+  text-align: center;
+  direction: rtl;
+}
+
+.pillar-contact h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 14px 20px;
+}
+
+.contact-card span {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #ffcc00;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #e8e0ff;
+  margin: 0;
+}
+
+.contact-logo {
+  margin-top: 80px;
+  width: 300px;
+}
